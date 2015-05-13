@@ -41,7 +41,8 @@ echo "JBOSS_USER=root" >> /etc/jboss-as/jboss-as.conf
 
 # Download a simple Helloworld to deply to Jboss
 cd "$JBOSS_HOME/standalone/deployments/";
-wget --no-check-certificate https://github.com/spagop/quickstart/raw/master/management-api-examples/mgmt-deploy-application/application/jboss-as-helloworld.war
+#wget --no-check-certificate https://github.com/spagop/quickstart/raw/master/management-api-examples/mgmt-deploy-application/application/jboss-as-helloworld.war
+wget --no-check-certificate https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war
 
 
 # Start JBoss
