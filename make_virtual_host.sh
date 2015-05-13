@@ -40,8 +40,8 @@ touch $virtual_host_file;
 echo "<Proxy balancer://mycluster>"		> $virtual_host_file;
 echo "Order deny,allow"					>> $virtual_host_file;
 echo "Allow from all"					>> $virtual_host_file;
-echo "BalancerMember http://192.168.33.21:8080/jboss-as-helloworld/HelloWorld"		>> $virtual_host_file;
-#echo "BalancerMember http://192.168.33.22:8080/jboss-as-helloworld/HelloWorld"		>> $virtual_host_file;
+echo "BalancerMember http://192.168.33.21:8080/sample"		>> $virtual_host_file;
+echo "BalancerMember http://192.168.33.22:8080/sample"		>> $virtual_host_file;
 echo "</Proxy>"							>> $virtual_host_file;
 
 echo "<VirtualHost *:80>"               >> $virtual_host_file;
